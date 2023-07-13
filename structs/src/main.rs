@@ -24,18 +24,18 @@ fn main() {
 
     user1.email = String::from("knowledgeispower@codemartian.com");
 
-    println!("{:?}", &user1);
+    println!("{:#?}", &user1);
 
     let user2 = build_user(String::from("jeffmmartin@codemartian.com"), String::from("mr_wubwubs"));
     
-    println!("{:?}", &user2);
+    println!("{:#?}", &user2);
 
     let user3 = User {
         email: String::from("userfromanothamotha@codemartian.com"),
         ..user1
     };
 
-    println!("{:?}", &user3);
+    println!("{:#?}", &user3);
 
     let black = Color(0,0,0);
     let origin = Point(0,0,0);
